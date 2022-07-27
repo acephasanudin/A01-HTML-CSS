@@ -43,12 +43,44 @@
       </div>
     </div>
     <footer>
-      <div class="container">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/videos/background_video.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">
+          <p>“Simplicity is the soul of efficiency.” – Austin Freeman</p>
+          <img
+            width="50px"
+            id="sponsor-right"
+            src="https://bucket.cloud.lintasarta.co.id:8082/dts-sitemanagement/site-management/images/7f3c1d50-8e00-42b7-96d5-f828ec0669c4.png"
+          />
+          <img
+            width="100px"
+            id="sponsor-left"
+            src="https://images.tokopedia.net/img/elTgOa/2021/12/24/bee80c95-d90e-43bc-af96-58e370df876c.png"
+          />
+          <img
+            width="45px"
+            id="sponsor-right"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg/1030px-Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg.png"
+          />
+        </div>
+      </div>
+      <!-- <div class="container">
         <img
-          src="data:image/png;base64,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"
+        src="data:image/png;base64,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"
         />
         <p>“Simplicity is the soul of efficiency.” – Austin Freeman</p>
-      </div>
+        <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+        class="vid-bg"
+      >
+        <source src="./assets/videos/background_video.mp4" type="video/mp4" />
+      </video>
+      </div> -->
     </footer>
     <!-- TODO FOOTER : Acep Hasanudin -->
   </body>

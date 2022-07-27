@@ -19,16 +19,12 @@ a {
 }
 
 footer {
-  padding-top: 30px;
-}
-
-footer img {
-  width: 124px;
+  background-color: #2A62EC;
 }
 
 footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+  color: white;
+  font-size: 20px;
 }
 
 .container {
@@ -115,7 +111,6 @@ footer p {
 
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
   padding-bottom: 80px;
   text-align: center;
 }
@@ -144,6 +139,36 @@ footer p {
   cursor: pointer;
   box-shadow: 0 7px #1a7940;
   border-radius: 50px 5px 50px 5px;
+}
+
+.video-container {
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.video-container video {
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  min-width: 100vw;
+  min-height: 100px;
+  z-index: 0;
+}
+
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+  margin: auto;
+  width: 50%;
+}
+
+.video-container .caption p {
+  padding-bottom: 30px
 }
 
 @keyframes fade-in {
