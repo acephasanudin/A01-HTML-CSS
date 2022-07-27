@@ -36,6 +36,66 @@ footer p {
   margin: 0 auto;
 }
 
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://www.w3schools.com/w3css/img_nature_wide.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.signup:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 0 7px #2d33a7;
+}
+
+.facebook:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.twitter {
+  background-color: #55acee;
+  cursor: pointer;
+  box-shadow: 0 7px #347cce;
+}
+
+.twitter:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-bottom: 80px;
