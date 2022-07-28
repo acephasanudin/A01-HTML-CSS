@@ -12,13 +12,16 @@
     <!-- TODO HEADER : Alvin Abraham -->
     <header>
       <div class='header-left'>
-        <img class='header-logo' src='https://prog-8.com/images/html/advanced/main_logo.png' alt='Progate'>
+        <img class='header-logo' src='./assets/images/icons/logo_white.png' alt='A01'>
+      </div>
+      <div class='goto gf'>
+        <a href='#id-services'>Services</a>
       </div>
       <div class='goto gf'>
         <a href='#id-footer'>Contact Us</a>
       </div>
       <div class='goto gb'>
-        <a href='#id-body'>Team</a>
+        <a href='#id-team'>Team</a>
       </div>
       <div class='goto gm'>
         <a href='#id-main'>Home</a>
@@ -42,7 +45,7 @@
     <!-- TODO MAIN : Andika Dwi Hertanto -->
 
     <!-- TODO BODY : Agung Prasetyo -->
-    <section class="feature_section layout_padding">
+    <section id="id-team" class="feature_section layout_padding">
       <div class="container">
         <h2 class="text-uppercase">
           Meet Our Team
@@ -137,13 +140,36 @@
     <!-- TODO BODY : Agung Prasetyo -->
 
     <!-- TODO FOOTER : Acep Hasanudin -->
-    <div id='id-footer' class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Sudah siap?</h2>
-          <h3>Yuk ceritakan ide mu, dan mulai sekarang juga.</h3>
+    <div id="id-services" class="flex-container">
+      <div class="div-q-service">
+        <h1>We offer quality services</h1>
+        <h1>in the following areas</h1>
+      </div>
+      <div>
+        <div class="CSSgal">
+          <s id="s1"></s> 
+          <s id="s2"></s>
+          <s id="s3"></s>
+        
+          <div class="slider">
+            <div>
+              <h1 style="color:black">Backend</h1>
+            </div>
+            <div>
+              <h1 style="color:black">Frontend</h1>
+            </div>
+            <div>
+              <h1 style="color:black">CMS</h1>
+            </div>
+          </div>
+        
+          <div class="bullets">
+            <a href="#s1">1</a>
+            <a href="#s2">2</a>
+            <a href="#s3">3</a>
+          </div>
+        
         </div>
-        <span class="btn message">Hire Us</span>
       </div>
     </div>
     <footer>
@@ -151,24 +177,37 @@
         <video autoplay muted loop>
           <source src="./assets/videos/background_video.mp4" type="video/mp4" />
         </video>
-        <div class="caption">
-          <p></p>
-          <img
-            width="50px"
-            id="sponsor-right"
-            src="./assets/images/icons/digitalent.png"
-          />
-          <img
-            width="100px"
-            id="sponsor-left"
-            src="./assets/images/icons/progate.png"
-          />
-          <img
-            width="45px"
-            id="sponsor-right"
-            src="./assets/images/icons/kominfo.png"
-          />
+        <div class="flex-container">
+          <div class="div-center">
+            <img class='header-logo' src='./assets/images/icons/logo_white.png' alt='A01' width="30%">
+            <hr>
+            <p>Monday - Friday : 9 AM - 7 PM (GMT+8)</p>
+          </div>
+          <div>
+            <p class="footer-title">Contact Us</p>
+            <p>Singapore Head Office</p>
+            <p>456 Alexandra Road, #04-02 Fragrance Empire Building Singapore 119962</p>
+          </div>
+          <div>
+            <p class="footer-title">&nbsp</p>
+            <p>Indonesia Office</p>
+            <p>Jl. Soga No.46 Tahunan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55167</p>
+          </div>  
+          <div>
+            <p class="footer-title">&nbsp</p>
+            <p>London Office</p>
+            <p>71-75 Shelton Street London, Greater London WC2H 9JQ, United Kingdom</p>
+          </div>
+          <div class="div-center">
+            <p class="footer-title">Follow Us</p>
+            <img src="./assets/images/icons/facebook.png" alt="facebook" width="50px">
+            <img src="./assets/images/icons/instagram.png" alt="instagram" width="50px">
+            <img src="./assets/images/icons/linkedin.png" alt="linkedin" width="50px">
+          </div>
         </div>
+      </div>
+      <div class="footer-copyright">
+        <b>A01</b> @2022 All Right Reserved
       </div>
     </footer>
     <!-- TODO FOOTER : Acep Hasanudin -->
