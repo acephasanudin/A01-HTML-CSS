@@ -105,6 +105,8 @@ footer p {
   margin: 0 auto;
 }
 
+/* adh */
+
 .top-wrapper-text{
   animation:fade-in 2s;
 }
@@ -155,13 +157,13 @@ footer p {
 }
 
 .meet {
-  background-color: #104cba;
+  background-color: #023799;
   cursor: pointer;
-  box-shadow: 0 7px #347cce;
+  box-shadow: 0 5px #347cce;
 }
 
 .meet:hover {
-  background-color: #023799;
+  background-color: #104cba;
 }
 
 .meet:active {
@@ -170,17 +172,93 @@ footer p {
   box-shadow: none;
 }
 
-.delay-0-4s {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+.lesson-wrapper {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  height: 60vh;
+  padding-bottom: 80px;
+  background-color: white;
+  text-align: center;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+.section-title {
+  display: block;
+  text-align: left;
 }
+
+.section-title .subtitle {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: inline-block;
+  padding: 10px 14px;
+  background-color: rgb(208, 230, 252);
+  box-shadow:  rgb(0, 0, 0);
+}
+
+.section-title .title {
+  padding: 15px 0;
+}
+
+.section-title p {
+  font-size: 20px;
+}
+
+.section-title .list-icon {
+  padding-top: 15px;
+}
+
+.section-title li {
+  margin-left: 20px;
+  padding-bottom: 10px;
+  list-style-type: circle;
+  font-size: 20px;
+} 
+
+.theme-gradient {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lesson {
+  float: left;
+  width: 50%;
+}
+
+.lesson-icon {
+  position: relative;
+  width: 70%;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+@keyframes fade-in {
+  from {
+     opacity:0;
+  }
+  to {
+     opacity:1;
+  }
+
+}
+
+/* adh */
 
 
 .message-wrapper {
@@ -248,15 +326,7 @@ footer p {
   padding-bottom: 50px
 }
 
-@keyframes fade-in {
-  from {
-     opacity:0;
-  }
-  to {
-     opacity:1;
-  }
 
-}
 
 /* agp */
 
@@ -382,6 +452,7 @@ footer p {
 
 .flex-container {
   display: flex;
+  padding-bottom: 50px;
   flex-wrap: nowrap;
 }
 
@@ -440,8 +511,8 @@ footer p {
 
 .CSSgal .bullets > a {
 	display: inline-block;
-	width:       30px;
-	height:      30px;
+	width:       15px;
+	height:      15px;
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
@@ -485,4 +556,46 @@ footer p {
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
+}
+
+.int-bullet {
+  display: inline-block;
+  height: 3rem - (0.2 * 3rem);
+  width: 3rem - (0.2 * 3rem);
+    
+  border-width: 0.1 * 3rem;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 50%;
+
+  overflow: hidden;
+  position: relative;
+
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.int-bullet::before {
+  content: '';
+
+  width: 100%;
+  height: 100%;
+
+  background-color: currentColor;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.int-bullet:hover {
+  border-color: currentColor;
+}
+
+.int-bullet:hover::before {
+  height: 40%;
+  width: 40%;
 }
