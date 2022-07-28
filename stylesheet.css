@@ -93,7 +93,7 @@ header a {
 }
 
 footer {
-  background-color: #2A62EC;
+  /* background-color: #2A62EC; */
 }
 
 footer p {
@@ -299,14 +299,15 @@ footer p {
 }
 
 .video-container video {
-  opacity: 0.25;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: cover;
   min-width: 100vw;
   min-height: 100px;
-  z-index: 0;
+  display: block;
+  z-index: -1;
 }
 
 .video-container .caption {
@@ -316,6 +317,19 @@ footer p {
   padding-top: 80px;
   margin: auto;
   width: 50%;
+}
+
+.bg-footer {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  min-width: 100vw;
+  min-height: 100px;
+  display: block;
+  z-index: -2;
+  background-color: blue;
 }
 
 .video-container .caption p {
@@ -454,6 +468,7 @@ footer p {
   display: flex;
   padding-bottom: 50px;
   flex-wrap: nowrap;
+  z-index: 2;
 }
 
 .flex-container > div {
