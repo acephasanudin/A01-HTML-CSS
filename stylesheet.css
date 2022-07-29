@@ -43,10 +43,10 @@ a {
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(max(calc(100% + 40px), 1320px));
+    transform: translateX(calc(100% + 40px));
   }
   100% {
-    transform: translateX(min(calc(-100% - 280px), -1560px));
+    transform: translateX(min(calc(-100% - 40px), -1560px));
   }
 }
 
