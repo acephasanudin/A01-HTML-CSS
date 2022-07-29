@@ -30,13 +30,15 @@ a {
   border-bottom: 5px solid white;
   font-size: 30px;
   width: 100%;
+
+  /* https://stackoverflow.com/questions/63949963/
+     css-marquee-goes-beyond-the-screen-size-on-smaller-devices */
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; /* buat teks berlebih jadi sebaris */
 }
 
 .marquee {
-  /* buat teks berlebih jadi sebaris */
-  overflow: visible;
-  white-space: nowrap;
-
   animation: scroll-left 15s infinite;
   animation-timing-function: linear;
 }
