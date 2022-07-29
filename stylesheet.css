@@ -514,6 +514,7 @@ footer p {
   border-radius: 4px;
   background-color: rgba(192, 192, 192, 0.8);
   color: black;
+  cursor: pointer;
 }
 #contact-submit:hover {
   background-color: #2A62EC;
