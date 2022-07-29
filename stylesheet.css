@@ -43,12 +43,10 @@ a {
 
 @keyframes scroll-left {
   0% {
-    left: 110%;
-    /* transform: translateX(110%); */
+    transform: translateX(max(calc(100% + 40px), 1320px));
   }
   100% {
-    right: -120%;
-    /* transform: translateX(-120%); */
+    transform: translateX(min(calc(-100% - 280px), -1560px));
   }
 }
 
@@ -99,7 +97,9 @@ footer p {
 }
 
 .container {
-  width: 1170px;
+  /* width: 1170px; */
+  max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -116,6 +116,8 @@ footer p {
   background-size: cover;
   color: white;
   text-align: center;
+
+  width: 100%;
 }
 
 .overlay {
