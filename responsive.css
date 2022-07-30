@@ -1,9 +1,17 @@
 /* Tablet */
 @media all and (max-width: 1000px) {
-
 }
 
 /* Smartphone */
-@media all and (max-width: 670px) {
-    
+@media all and (max-width: 600px) {
+  header .goto {
+    display : none;
+  }
+  header .menu-icon {
+    display : block;
+    transition : background-color 1s;
+  }
+  header .menu-icon:hover {
+    background-color : rgba(255,0,0,0.8);
+  }
 }
