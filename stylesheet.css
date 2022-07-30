@@ -71,6 +71,14 @@ header .header-logo {
   margin-top : 9px;
 }
 
+header .menu-icon {
+  color : white;
+  float : right;
+  display : none;
+  font-size : 24px;
+  padding : 13px 15px;
+}
+
 header .goto {
   float : right;
   width : fit-content;
