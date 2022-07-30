@@ -9,9 +9,5 @@
   }
   header .menu-icon {
     display : block;
-    transition : background-color 1s;
-  }
-  header .menu-icon:hover {
-    background-color : rgba(255,0,0,0.8);
   }
 }
